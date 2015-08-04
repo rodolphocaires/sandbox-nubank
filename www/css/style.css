@@ -109,7 +109,7 @@
 }
 
 .orange {
-    color: orangered;
+    color: orange;
 }
 .badge-month {
     right: 16px !important;
@@ -138,4 +138,18 @@
 }
 .logo-small {
     width: 88px;
+}
+.home-item-1 {
+    height: 25vh;
+    border-right: 16px solid orange !important;
+}
+.home-item-2 {
+    height: 75vh;
+    border-right: 16px solid #33cd5f !important;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.padding-right {
+    padding-right: 16px;
 }

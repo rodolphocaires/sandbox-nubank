@@ -6,7 +6,7 @@
 // 'starter.controllers' is found in controllers.js
 var app = angular.module('nubank', ['ionic', 'starter.controllers']);
 
-app.run(function ($ionicPlatform) {
+app.run(function ($ionicPlatform, $timeout) {
         $ionicPlatform.ready(function () {
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
@@ -15,10 +15,13 @@ app.run(function ($ionicPlatform) {
                 cordova.plugins.Keyboard.disableScroll(true);
 
             }
-            if (window.StatusBar) {
-                // org.apache.cordova.statusbar required
-                StatusBar.hide();
-            }
+            $timeout(function () {
+                if (window.StatusBar) {
+                    // org.apache.cordova.statusbar required
+                    StatusBar.hide();
+                }
+            }, 500);
+
         });
     })
     .config(function ($stateProvider, $urlRouterProvider) {
