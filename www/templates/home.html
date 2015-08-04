@@ -1,0 +1,52 @@
+<ion-view>
+    <ion-slide-box show-pager="false" does-continue="false" disable-scroll="false"
+                   on-slide-changed="slideHasChanged($index)">
+        <ion-slide on-swipe-right="showMenu()">
+            <div class="row row-no-padding nubank-main full-height">
+                <div class="col-25 col-menu text-center padding-top">
+                    <ion-item class="item-borderless item-transparent light item-text-wrap">
+                        <i class="icon ion-ios-settings"></i><br/>
+
+                        <p>Minha Conta</p>
+                    </ion-item>
+                    <ion-item class="item-borderless item-transparent light item-text-wrap">
+                        <i class="icon ion-chatbubbles"></i><br/>
+
+                        <p>Me Ajuda</p>
+                    </ion-item>
+                    <ion-item class="item-borderless item-transparent light item-text-wrap">
+                        <i class="icon ion-person-add"></i><br/>
+
+                        <p>Indicar</p>
+                        <span class="badge badge-assertive badge-notification">9</span>
+                    </ion-item>
+                    <ion-item class="item-borderless item-transparent light item-text-wrap">
+                        <i class="icon ion-unlocked"></i><br/>
+
+                        <p>Bloqueio Temporário</p>
+                    </ion-item>
+                </div>
+                <div class="col col-main assertive-bg">
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <ion-content class="col-main">
+                <ion-refresher
+                        pulling-text=""
+                        on-refresh="refresh()">
+                </ion-refresher>
+                <ion-list>
+                    <ion-item class="item-month item-borderless">
+                        <h2 class="center">SET</h2>
+                        <span class="badge-center badge badge-month orange">{{554.66 | currency}}</span>
+                    </ion-item>
+                    <ion-item class="item-month item-borderless">
+                        <h2 class="center">AGO</h2>
+                        <span class="badge-center badge badge-month calm">{{0 | currency}}</span>
+                    </ion-item>
+                </ion-list>
+            </ion-content>
+        </ion-slide>
+    </ion-slide-box>
+</ion-view>

@@ -1,6 +1,6 @@
 {
   "name": "Nubank",
-  "app_id": "",
+  "app_id": "e396504f",
   "gulpStartupTasks": [
     "sass",
     "watch"

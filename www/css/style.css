@@ -1,7 +1,7 @@
 /* Empty. Add your own CSS if you like */
 .nubank-search {
     font-size: 26px;
-    padding-right: 36px !important;
+    padding-right: 28px !important;
 }
 
 .nubank-main {
@@ -59,4 +59,83 @@
     -ms-flex: 0 0 5%;
     flex: 0 0 5%;
     max-width: 5%;
+}
+.list-timeline:after {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 55px;
+    bottom: 0;
+    left: 34px;
+    border-left: 1px solid #ccc;
+}
+.badge-timeline {
+    right: 16px !important;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.nubank {
+    color: #6E2B77;
+}
+.nubank-bg {
+    background-color: #6E2B77;
+}
+.badge-notification {
+    top: 10px !important;
+    right: 48px !important;
+    font-size: 10px;
+    padding: 0 5px;
+    font-weight: lighter;
+}
+.list-timeline h3 {
+    max-width: 115px;
+}
+.nubank-main .padding-top {
+    padding-top: 20px;
+}
+.slider, .full-height {
+    height: 100%;
+}
+
+.item-month {
+    background-color: #423347;
+    margin-bottom: 2px;
+    height: 80px;
+}
+.item-month h2 {
+    color: #ddd;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.orange {
+    color: orangered;
+}
+.badge-month {
+    right: 16px !important;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.center {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute !important;
+    margin:0 auto;
+    width:100%;
+}
+
+.badge-center {
+    top: 50% !important;
+    margin-top: -12px !important;
+}
+.nubank-main .item {
+    padding: 16px 8px;
+}
+.logo-small {
+    width: 88px;
 }

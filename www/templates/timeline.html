@@ -1,0 +1,72 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content>
+
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+        <ion-header-bar class="bar-light">
+            <label class="item item-input item-borderless">
+                <i class="icon ion-ios-search placeholder-icon nubank-search"></i>
+                <input type="search">
+                <img src="img/logo.png" class="logo-small">
+            </label>
+        </ion-header-bar>
+        <ion-content class="stable-bg">
+            <ion-refresher
+                    pulling-text=""
+                    on-refresh="refresh()">
+            </ion-refresher>
+            <ion-list class="list-borderless list-timeline">
+                <ion-item class="item-avatar item-transparent item-text-wrap">
+                    <img src="img/map-pin.png">
+                    <h3>Restaurante</h3>
+                    <h2>Esquina da Vila</h2>
+                    <h2>{{ 13.79 | currency }}</h2>
+                    <span class="badge badge-timeline">10:24</span>
+                </ion-item>
+                <ion-item class="item-avatar item-transparent item-text-wrap">
+                    <img src="img/window.png">
+                    <h3>Outros</h3>
+                    <h2>Uber</h2>
+                    <h2>{{ 17.80 | currency }}</h2>
+                    <span class="badge badge-timeline">Ontem</span>
+                </ion-item>
+                <ion-item class="item-avatar item-transparent item-text-wrap">
+                    <img src="img/map-pin.png">
+                    <h3>Restaurante</h3>
+                    <h2>Rhino Pub</h2>
+                    <h2>{{ 250.22 | currency }}</h2>
+                    <span class="badge badge-timeline">sábado</span>
+                </ion-item>
+                <ion-item class="item-avatar item-transparent item-text-wrap">
+                    <img src="img/card.png">
+                    <h3 class="nubank">Seu cartão foi ativado.</h3>
+                    <span class="badge badge-timeline">quinta-feira</span>
+                </ion-item>
+                <ion-item class="item-avatar item-transparent item-text-wrap">
+                    <img src="img/balance.png">
+                    <h3 class="balanced">Limite inicial</h3>
+                    <h2 class="balanced">{{ 2800 | currency }}</h2>
+                    <span class="badge badge-timeline">quinta-feira</span>
+                </ion-item>
+                <ion-item class="item-avatar item-transparent item-text-wrap">
+                    <img src="img/play.png">
+                    <h3 class="nubank">Veja como funciona</h3>
+                    <span class="badge badge-timeline">21/07/15</span>
+                </ion-item>
+                <ion-item class="item-avatar item-transparent item-text-wrap">
+                    <img src="img/friends.png">
+                    <h3 class="nubank">Indique seus amigos!</h3>
+                    <p>Amigos indicados por você terão prioridade na lista</p>
+                    <span class="badge badge-timeline">21/07/15</span>
+                </ion-item>
+                <ion-item class="item-avatar item-transparent item-text-wrap">
+                    <img src="img/star.png" class="nubank-bg image-small">
+                    <h3 class="nubank">Seja bem vindo ao Nubank!</h3>
+                    <span class="badge badge-timeline">21/07/15</span>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>
