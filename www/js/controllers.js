@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('nubank.controllers', [])
 .controller('TimelineCtrl', function ($scope, $timeout) {
     $scope.refresh = function () {
         $timeout(function () {
