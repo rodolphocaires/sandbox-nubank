@@ -1,0 +1,62 @@
+/* Empty. Add your own CSS if you like */
+.nubank-search {
+    font-size: 26px;
+    padding-right: 36px !important;
+}
+
+.nubank-main {
+    -webkit-box-flex: 0 !important;
+    -moz-box-flex: 0 !important;
+    -webkit-flex: 0 1 100% !important;
+    -ms-flex: 0 1 100% !important;
+    flex: 0 1 100% !important;
+}
+.scroll{
+    height: 100% !important;
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    display: flex !important;
+    -webkit-box-direction: normal !important;
+    -moz-box-direction: normal !important;
+    -webkit-box-orient: vertical !important;
+    -moz-box-orient: vertical !important;
+    -webkit-flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+
+}
+
+.col-menu {
+    background-color: #423347;
+}
+
+.col-main {
+    background-color: #3b2f3f;
+}
+
+.col-menu p {
+    font-size: 10px;
+    line-height: 130%;
+    color: #a99cae !important;
+}
+.col-menu br {
+    line-height: 150%;
+}
+
+.item-transparent {
+    background-color: transparent !important;
+}
+.col-menu .icon {
+    font-size: 32px;
+}
+.col-5 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 5%;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 5%;
+    -ms-flex: 0 0 5%;
+    flex: 0 0 5%;
+    max-width: 5%;
+}
