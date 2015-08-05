@@ -1,7 +1,7 @@
 /* Empty. Add your own CSS if you like */
-* {
-    font-family: 'Montserrat', sans-serif !important;
-}
+/** {*/
+    /*font-family: 'Montserrat', sans-serif !important;*/
+/*}*/
 .nubank-search {
     font-size: 26px;
     padding-right: 28px !important;
@@ -184,13 +184,22 @@
     padding-bottom: 0;
 }
 
-.popup-head {
-    display: none;
-}
-.popup-body {
-    padding: 0;
-}
-
 .small .badge {
     font-size: 10px !important;
+}
+
+.referral-notification {
+    right: auto !important;
+    left: 30px;
+    top: 0 !important;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 4px 8px;
+}
+
+.button.button-nubank {
+    border-color: #ddd;
+    background-color: #fff;
+    color: #6E2B77;
 }
