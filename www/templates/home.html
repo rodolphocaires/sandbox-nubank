@@ -3,30 +3,26 @@
                    on-slide-changed="slideHasChanged($index)">
         <ion-slide on-swipe-right="showMenu()">
             <div class="row row-no-padding nubank-main full-height">
-                <div class="col-25 col-menu text-center padding-top">
-                    <ion-item class="item-borderless item-transparent light item-text-wrap">
+                <div class="col-25 col-menu nubank-bg-lighter text-center padding-top">
+                    <ion-item class="item-borderless item-transparent light item-text-wrap" ui-sref="app.account">
                         <i class="icon ion-ios-settings"></i><br/>
-
                         <p>Minha Conta</p>
                     </ion-item>
-                    <ion-item class="item-borderless item-transparent light item-text-wrap">
+                    <ion-item class="item-borderless item-transparent light item-text-wrap" ng-click="showHelpPopup()">
                         <i class="icon ion-chatbubbles"></i><br/>
-
                         <p>Me Ajuda</p>
                     </ion-item>
                     <ion-item class="item-borderless item-transparent light item-text-wrap">
                         <i class="icon ion-person-add"></i><br/>
-
                         <p>Indicar</p>
                         <span class="badge badge-assertive badge-notification">9</span>
                     </ion-item>
                     <ion-item class="item-borderless item-transparent light item-text-wrap">
                         <i class="icon ion-unlocked"></i><br/>
-
                         <p>Bloqueio Temporário</p>
                     </ion-item>
                 </div>
-                <div class="col col-main assertive-bg">
+                <div class="col col-main nubank-bg-light assertive-bg">
                     <ion-list class="list-borderless">
                         <ion-item class="item-transparent home-item-1 text-right no-padding">
                             <div class="center padding-right">
@@ -45,7 +41,7 @@
             </div>
         </ion-slide>
         <ion-slide>
-            <ion-content class="col-main">
+            <ion-content class="nubank-bg-light">
                 <ion-refresher
                         pulling-text=""
                         on-refresh="refresh()">

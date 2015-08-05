@@ -1,0 +1,49 @@
+<ion-view>
+    <ion-header-bar align-title="center" class="nubank-bg-lighter">
+        <button class="button button-icon icon ion-ios-arrow-thin-left light" ng-click="goBack()"></button>
+        <h1 class="title light">Meus Dados</h1>
+    </ion-header-bar>
+    <ion-content class="has-header small stable-bg">
+        <ion-list>
+            <ion-item class="item-icon-left item-icon-right account-spacing">
+                <i class="icon ion-card nubank"></i>
+                <h2>Esqueci a senha do cartão</h2>
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+            <ion-item class="item-icon-left item-icon-right">
+                <i class="icon ion-social-usd balanced"></i>
+                <h2>Limite</h2>
+                <p>Disponível {{2100 | currency}} / Aprovado: {{2800 | currency}}</p>
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+            <ion-item class="item-input item-floating-label account-spacing light-bg">
+                <span class="input-label">E-mail</span>
+                <input type="text" placeholder="E-mail" ng-model="account.email">
+            </ion-item>
+            <ion-item class="item-input item-floating-label light-bg">
+                <span class="input-label">Telefone</span>
+                <input type="text" placeholder="Telefone" ng-model="account.phone">
+            </ion-item>
+            <ion-item class="item-icon-right account-spacing">
+                <h2>Alterar a senha da minha conta</h2>
+                <i class="icon ion-ios-arrow-right"></i>
+            </ion-item>
+            <ion-item class="item-toggle account-spacing no-padding-bottom">
+                <h2>Vencimento da Fatura</h2>
+                <p>Adicionar ao Calendário</p>
+                <label class="toggle toggle-balanced">
+                    <input type="checkbox">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </ion-item>
+            <ion-item>
+                <h2>Exportar compras para CSV</h2>
+            </ion-item>
+            <ion-item class="account-spacing margin-bottom">
+                <h2 class="assertive">SAIR DA CONTA</h2>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

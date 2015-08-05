@@ -1,4 +1,7 @@
 /* Empty. Add your own CSS if you like */
+* {
+    font-family: 'Montserrat', sans-serif !important;
+}
 .nubank-search {
     font-size: 26px;
     padding-right: 28px !important;
@@ -28,11 +31,11 @@
 
 }
 
-.col-menu {
+.nubank-bg-lighter {
     background-color: #423347;
 }
 
-.col-main {
+.nubank-bg-light {
     background-color: #3b2f3f;
 }
 
@@ -65,7 +68,7 @@
     position: absolute;
     z-index: -1;
     top: 55px;
-    bottom: 0;
+    bottom: -50px;
     left: 34px;
     border-left: 1px solid #ccc;
 }
@@ -141,15 +144,53 @@
 }
 .home-item-1 {
     height: 25vh;
-    border-right: 16px solid orange !important;
+    border-right: 20px solid orange !important;
 }
 .home-item-2 {
     height: 75vh;
-    border-right: 16px solid #33cd5f !important;
+    border-right: 20px solid #33cd5f !important;
 }
 .no-padding {
     padding: 0 !important;
 }
 .padding-right {
     padding-right: 16px;
+}
+.item-complex .item-content, .item-radio .item-content {
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+.nubank-bg-lighter .light:hover {
+    color: #fff;
+}
+.small p {
+    font-size: .6em !important;
+}
+.small h2, .small span, .small input {
+    font-size: .8em !important;
+}
+.account-spacing {
+    margin-top: 40px;
+}
+.margin-bottom {
+    margin-bottom: 40px;
+}
+
+.small .icon {
+    font-size: 24px !important;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0;
+}
+
+.popup-head {
+    display: none;
+}
+.popup-body {
+    padding: 0;
+}
+
+.small .badge {
+    font-size: 10px !important;
 }
