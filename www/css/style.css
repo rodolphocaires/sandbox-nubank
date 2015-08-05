@@ -203,3 +203,10 @@
     background-color: #fff;
     color: #6E2B77;
 }
+
+.help-popup .popup-body {
+    padding: 0;
+}
+.help-popup .popup-head {
+    display: none;
+}

@@ -29,6 +29,7 @@ angular.module('nubank.controllers', [])
     $scope.showHelpPopup = function () {
         helpPopup = $ionicPopup.show({
             templateUrl: 'templates/help-popup.html',
+            cssClass: 'help-popup',
             scope: $scope
         });
     };
