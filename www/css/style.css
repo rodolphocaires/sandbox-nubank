@@ -74,7 +74,7 @@
 }
 .badge-timeline {
     right: 16px !important;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 12px;
 }
 .nubank {
@@ -84,11 +84,10 @@
     background-color: #6E2B77;
 }
 .badge-notification {
-    top: 10px !important;
-    right: 48px !important;
-    font-size: 10px;
+    top: 0 !important;
+    right: 50px !important;
+    font-size: 11px;
     padding: 0 5px;
-    font-weight: lighter;
 }
 .list-timeline h3 {
     max-width: 115px;
@@ -164,7 +163,7 @@
     color: #fff;
 }
 .small p {
-    font-size: .6em !important;
+    font-size: .7em !important;
 }
 .small h2, .small span, .small input {
     font-size: .8em !important;
@@ -209,4 +208,11 @@
 }
 .help-popup .popup-head {
     display: none;
+}
+.block-popup .button {
+    font-size: 14px;
+    border-radius: 5px;
+}
+.block-popup .popup-head {
+    border-bottom: 1px solid #6E2B77;
 }

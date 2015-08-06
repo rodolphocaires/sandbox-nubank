@@ -42,6 +42,7 @@ angular.module('nubank.controllers', [])
         blockPopup = $ionicPopup.confirm({
             title: 'Bloqueio Temporário',
             template: 'Você quer bloquear temporariamente o seu cartão?',
+            cssClass: 'block-popup',
             cancelType: 'button-light',
             cancelText: 'Cancelar',
             okType: 'button-nubank',
